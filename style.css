@@ -1,6 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  /* bg colors */
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #273437;
+  --btn-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+
+  /* Text colors */
+  --text-gray: #44b9f0;
+  --text-white: #f3f4f6;
+
+  /* Decoration */
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+
+
 body {
-    font-family: sans-serif;
     margin: 0;
+    padding: 0;
+    font-family:"Poppins", sans-serif;
+    box-sizing: border-box;  
 }
 
 a {
@@ -8,21 +33,14 @@ a {
     color: black;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    min-height: 70px;
-    background-color: coral;
-    align-items: center;
-    padding: 10px;
-}
-
 .logo img {
     height: 60px;
     margin-right: 10px;
     border-radius: 50%;
     width: 60px;
-    
+    display: flex;
+    align-items: center;
+
 }
 
 .logo {
@@ -30,21 +48,75 @@ header {
     align-items: center;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffb01e;
+}
+
 nav a {
-     font-weight: 600;
-     padding-right: 10px;
+    font-weight: 600;
+    padding-right: 10px;
 }
 
 nav a:hover {
     color: white;
+    font-size: 2em;
 }
 
-@media (max-width: 700px) {
-    header {
-        flex-direction: column;
-    }
+.img {
+    width: 260px;
+    height: 350px;
+    margin-left: 115px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    align-items: center;    
+}
 
-    nav {
-        padding: 10px 0px;
-    }
+.content{
+    display: flex;
+}
+
+.text h1 {
+    display: flex;
+    color: var(--text black);
+    gap: 1rem;
+    align-self: center;
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+}
+
+.content {
+    width: fit-content; 
+    padding: 0.5rem 1rem;
+    border-radius: rem;
+    text-decoration: none;
+    align-self: center;
+}
+.content a {
+    background-color: var(--primary);
+    color: var(--text-white);
+    width: fit-content;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+.text  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: center;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    width: 50%;   
+}
+
+.about-content {
+    padding:  20px;   
 }
